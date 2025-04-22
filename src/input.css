@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Roboto", sans-serif;
+    --font-BG: "Bricolage Grotesque", sans-serif;
+    --font-mukta: "Mukta", sans-serif;
+    --color-primary: #DD3142;
+    --color-secondary-1: #222222;
+    --color-secondary-2: #0E0E0E;
+    --color-secondary-3: #6D6D6D;
+    --color-tertiary: #EEFF06;
+}
+
+@layer base {
+    body {
+        @apply font-sans bg-white;
+    }
+}
+
+.container {
+    @apply sm:w-[580px] md:w-[790px] lg:w-[1040px] xl:w-[1210px] px-5 mx-auto;
+}

@@ -38,3 +38,31 @@
 .testimonial-slider .slick-dots li.slick-active button {
     background-color: #DD3142;
 }
+
+.page-heading::before {
+    content: '';
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #DD3142 0.03%, rgba(196, 196, 196, 0) 141.61%);
+    z-index: -1;
+}
+
+.commercial-service-bg::before {
+    content: '';
+    height: 100%;
+    width: 72.73%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: #DD3142;
+}
+
+@media only screen and (max-width: 767px) {
+    .commercial-service-bg::before {
+        width: 100%;
+    }
+}
